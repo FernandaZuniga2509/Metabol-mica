@@ -82,7 +82,7 @@ Logs
 ##################
 #Volcano base
 vulcano <- ggplot(Logs, mapping=aes(x=LFC, y=LPV)) +
-  geom_point(size=2, color="grey") +
+  geom_point(size=2, color="#9C4669") +
   theme_classic() +
   labs(title="Analisis comparativo de miRNAs",
        caption="Creador: Fernanda Zuñiga",
@@ -128,10 +128,10 @@ vulcano2
 vulcano3 <- vulcano2 +
   geom_point(data = up_regulated,
              mapping = aes(x=LFC, y=LPV),
-             size = 3, alpha = 1, color = "blue") +
+             size = 3, alpha = 1, color = "#E665A4") +
   geom_point(data = down_regulated,
              mapping = aes(x=LFC, y=LPV),
-             size = 3, alpha = 1, color = "red")
+             size = 3, alpha = 1, color = "#65B2E6")
 
 vulcano3
 
