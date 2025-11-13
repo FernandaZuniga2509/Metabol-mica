@@ -62,7 +62,7 @@ grafica_dispersion <- ggplot(promedio_genes,
                              aes(x=Mean_DCT_Cx,
                                  y=Mean_DCT_Tx))+
   geom_point(size=2,
-             color="blue")
+             color="#F5AD62")
 
 grafica_dispersion
 
@@ -71,10 +71,10 @@ grafica_dispersion2 <- grafica_dispersion +
        caption="Creador: Fernanda Zuñiga",
        x=expression("Control 2"^"-DCT"),
        y=expression("Tratamiento 2"^"-DCT"))+
-  geom_smooth(method="lm", color = "red")+
+  geom_smooth(method="lm", color = "#998EED")+
   theme_minimal()+   
   theme(
-    panel.background=element_rect(fill="white"),   
+    panel.background=element_rect(fill="#F2A7DB"),   
     panel.grid.major=element_blank(),
     axis.text=element_text(family="Times New Roman", size=12),
     axis.title=element_text(family="Times New Roman", size=14, face="bold"),
